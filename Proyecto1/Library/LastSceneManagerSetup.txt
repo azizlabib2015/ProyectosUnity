@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/coche.unity
+- path: Assets/_Scenes/tetsGame.unity
   isLoaded: 1
   isActive: 1
