@@ -8,8 +8,8 @@ public class DeadZone : MonoBehaviour {
     GameObject ball;
     private void Start()
     {
-         ball= ballCollider.gameObject;
-        spawnBallPosition =ball.transform.
+        // ball= ballCollider.gameObject;
+        //spawnBallPosition =ball.transform.
     }
 
     private void OnTriggerEnter(Collider ballCollider)

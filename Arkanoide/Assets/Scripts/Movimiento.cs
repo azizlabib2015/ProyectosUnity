@@ -1,15 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.
 
 public class Movimiento : MonoBehaviour {
 
     public float horizontal;
     
     public float speed = 5;
+    public GameObject ball;
+    public Rigidbody rb;
+    public LauncherBall lb;
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        GameObject Object = collision.gameObject;
+        if (Object.name == "Ball")
+        {
+            Vector3 pivote = transform.position;
+            Vector3 pointDirection = collision.transform.position;
+            Vector3 direction = pointDirection - pivote;
+            Vector3 vectorDirection = direction * lb.pushForce;
+            collision.gameObject.GetComponent<Rigidbody>().AddForce(vectorDirection.normalized, ForceMode.Impulse);
+        }
+        else if (Object.name == "wRight")
+        {
+
+            Debug.Log(Object.name);
+        }
+        
+    }
+
+    
     void Start () {
-		
+        rb = ball.GetComponent<Rigidbody>();
+        lb = ball.GetComponent<LauncherBall>();
 	}
 	
 	

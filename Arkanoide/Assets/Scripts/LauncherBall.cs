@@ -6,7 +6,7 @@ public class LauncherBall : MonoBehaviour
 {
 
     public Rigidbody BallRigibody;
-    public float pushForce = 10;
+    public float pushForce = 15;
     private Vector3 direccion;
     private bool fired;
     // Use this for initialization

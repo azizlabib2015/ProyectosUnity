@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\DeadZone.cs" />
     <Compile Include="Assets\Scripts\LauncherBall.cs" />
     <Compile Include="Assets\Scripts\Movimiento.cs" />
+    <Compile Include="Assets\Scripts\WellDetection.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -18,4 +18,5 @@ public class ScoreObject : MonoBehaviour {
         manager.AddScore(scorePerHit);
 
     }
+
 }
